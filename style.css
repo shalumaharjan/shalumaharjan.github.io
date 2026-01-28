@@ -1,0 +1,130 @@
+:root {
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 20px;
+  --fs-xl: 24px;
+  --fs-xxl: 30px;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+}
+
+body {
+  margin: 0 88px;
+}
+
+.content {
+  margin: 236px 203px 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+h1 {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-xxl);
+}
+
+p {
+  font-family: var(--font-secondary);
+  font-weight: var(--fw-regular);
+  font-size: 15px;
+}
+
+h2 {
+  font-family: var(--font-secondary);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-lg);
+}
+
+.nav_head {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-sm);
+}
+
+.fullName {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-extrabold);
+  font-size: var(--fs-xl);
+}
+.position {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-sm);
+}
+
+.main {
+  display: flex;
+}
+
+nav {
+  padding: 32px 0;
+}
+
+.navigation {
+  display: flex;
+  gap: 583px;
+  justify-content: space-between;
+}
+.navigation .name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav_head {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.nav_head a {
+  border-right: 1px solid black;
+  padding-right: 20px;
+}
+
+.side_socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25px;
+  margin: 400px 0 0;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.line {
+  border-left: 2px solid #333;
+  height: 130px;
+  margin: 10px 15px 0;
+}
+
+.back_top {
+  display: flex;
+  justify-content: end;
+}
+
+.foot_text {
+  font-family: var(--font-primary);
+  font-size: var(--fw-regular);
+  font-weight: var(--fs-sm);
+}
+
+#phn,
+#email {
+  font-weight: var(--fw-bold);
+}
