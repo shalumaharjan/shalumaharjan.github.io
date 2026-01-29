@@ -205,7 +205,6 @@ nav {
 .contact {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
 .contact_details {
   display: flex;
@@ -234,6 +233,10 @@ nav {
   font-family: var(--font-primary);
   font-weight: var(--fw-regular);
   font-size: var(--fs-sm);
+}
+
+#contact_form .btn {
+  align-self: flex-end;
 }
 
 .phone,
