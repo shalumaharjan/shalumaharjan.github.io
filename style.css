@@ -1,6 +1,7 @@
 :root {
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "Inter", sans-serif;
+  --font-ter: "Clicker Script", cursive;
 
   --fs-xs: 12px;
   --fs-sm: 14px;
@@ -18,10 +19,27 @@
 
 body {
   margin: 0 88px;
+  padding: 0;
+  line-height: 1.5;
+}
+* {
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .content {
-  margin: 236px 203px 0;
+  margin: 319px 203px 0;
 }
 
 footer {
@@ -34,24 +52,58 @@ h1 {
   font-family: var(--font-primary);
   font-weight: var(--fw-medium);
   font-size: var(--fs-xxl);
+  margin: 0;
+  padding: 0;
 }
 
 p {
   font-family: var(--font-secondary);
   font-weight: var(--fw-regular);
   font-size: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
   font-family: var(--font-secondary);
   font-weight: var(--fw-semibold);
   font-size: var(--fs-lg);
+  margin: 0;
+  padding: 0;
 }
 
-.nav_head {
+.nav_head,
+button {
   font-family: var(--font-primary);
   font-weight: var(--fw-regular);
   font-size: var(--fs-sm);
+}
+.btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: #fff;
+  width: auto;
+  align-self: flex-start;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 88px;
+  right: 88px;
+  background-color: #fff;
+}
+
+.navigation {
+  display: flex;
+  gap: 583px;
+  justify-content: space-between;
+  padding: 23px 0;
+}
+.navigation .name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .fullName {
@@ -69,21 +121,6 @@ h2 {
   display: flex;
 }
 
-nav {
-  padding: 32px 0;
-}
-
-.navigation {
-  display: flex;
-  gap: 583px;
-  justify-content: space-between;
-}
-.navigation .name {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .nav_head {
   display: flex;
   gap: 22px;
@@ -94,12 +131,32 @@ nav {
   padding-right: 20px;
 }
 
+.home_info h3 {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-medium);
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+}
+.home_info .myName {
+  font-weight: var(--fw-bold);
+  font-family: var(--font-ter);
+  font-size: var(--fs-xxl);
+}
+
+.home_desc {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
 .side_socials {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 25px;
-  margin: 400px 0 0;
+  margin: 470px 0 0;
+  position: fixed;
 }
 .socials {
   display: flex;
@@ -109,13 +166,13 @@ nav {
 
 .line {
   border-left: 2px solid #333;
-  height: 130px;
+  height: 120px;
   margin: 10px 15px 0;
 }
 
 .back_top {
   display: flex;
-  justify-content: end;
+  align-items: end;
 }
 
 .foot_text {
@@ -127,4 +184,82 @@ nav {
 #phn,
 #email {
   font-weight: var(--fw-bold);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 266px;
+  gap: 50px;
+}
+
+.about {
+  margin: 0 0 75px;
+  display: flex;
+}
+
+.projects {
+  margin: 0 0 111px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.contact_details {
+  display: flex;
+  gap: 37px;
+  flex-direction: column;
+}
+.contact #contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 12px 0 0;
+}
+#contact_form input[type="text"] {
+  width: 490px;
+  height: 40px;
+  padding: 12px 12px 12px 20px;
+  border-radius: 5px;
+}
+#contact_form textarea {
+  padding: 12px 12px 12px 20px;
+  border-radius: 5px;
+  resize: none;
+}
+#contact_form input,
+#contact_form textarea {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-sm);
+}
+
+.phone,
+.email {
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+}
+
+.emai,
+.phn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mediums {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.con_medium {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+footer {
+  margin: 93px 0 20px;
 }
