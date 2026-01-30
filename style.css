@@ -149,6 +149,9 @@ nav {
   flex-direction: column;
   gap: 80px;
 }
+.home_desc p {
+  width: 60%;
+}
 
 .side_socials {
   display: flex;
@@ -196,10 +199,47 @@ nav {
 .about {
   margin: 0 0 75px;
   display: flex;
+  gap: 94px;
+}
+.about_text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 60%;
 }
 
 .projects {
   margin: 0 0 111px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.projects .works {
+  display: flex;
+  gap: 40px;
+}
+.projects .project_details {
+  padding: 40px 47px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 50%;
+}
+.projects .pro_part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.projects .left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.project_details .used {
+  display: flex;
+  gap: 18px;
 }
 
 .contact {
