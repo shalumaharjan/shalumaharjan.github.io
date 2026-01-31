@@ -27,10 +27,19 @@ body {
   text-decoration: none;
   box-sizing: border-box;
   list-style: none;
+  background-color: #faedcd;
+  color: #3a2e2a;
 }
 ::before,
 ::after {
   box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+a:hover {
+  color: #b08968;
 }
 
 ul {
@@ -79,11 +88,17 @@ button {
   font-size: var(--fs-sm);
 }
 .btn {
+  color: #3a2e2a;
   padding: 8px 12px;
   border-radius: 6px;
-  background-color: #fff;
+  border: 1px solid #3a2e2a;
+  cursor: pointer;
   width: auto;
   align-self: flex-start;
+}
+.btn:hover {
+  background-color: #3a2e2a;
+  color: #faedcd;
 }
 
 nav {
@@ -127,7 +142,7 @@ nav {
   align-items: center;
 }
 .nav_head a {
-  border-right: 1px solid black;
+  border-right: 1px solid #3a2e2a;
   padding-right: 20px;
 }
 
@@ -138,10 +153,11 @@ nav {
   margin: 0;
   padding: 0;
 }
-.home_info .myName {
+.myName {
   font-weight: var(--fw-bold);
   font-family: var(--font-ter);
   font-size: var(--fs-xxl);
+  letter-spacing: 0.05em;
 }
 
 .home_desc {
@@ -151,6 +167,10 @@ nav {
 }
 .home_desc p {
   width: 60%;
+}
+
+.pp img {
+  border-radius: 5px;
 }
 
 .side_socials {
@@ -223,9 +243,10 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  border: 1px solid black;
+  border: 1px solid #3a2e2a;
   border-radius: 5px;
   width: 50%;
+  background-color: #fff;
 }
 .projects .pro_part {
   display: flex;
