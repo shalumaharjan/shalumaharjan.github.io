@@ -149,7 +149,7 @@ nav {
 .home_info h3 {
   font-family: var(--font-primary);
   font-weight: var(--fw-medium);
-  font-size: 28px;
+  font-size: 26px;
   margin: 0;
   padding: 0;
 }
@@ -158,6 +158,9 @@ nav {
   font-family: var(--font-ter);
   font-size: var(--fs-xxl);
   letter-spacing: 0.05em;
+}
+.typing {
+  font-weight: var(--fw-bold);
 }
 
 .home_desc {
