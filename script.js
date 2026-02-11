@@ -1,3 +1,4 @@
+// Typing Effect
 var typed = new Typed(".typing", {
   strings: ["", "Student", "Web Developer", "Designer", "Learner"],
   typeSpeed: 100,

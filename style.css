@@ -17,10 +17,11 @@
   --fw-extrabold: 800;
 }
 
-body {
+#wrapper {
   margin: 0 88px;
   padding: 0;
   line-height: 1.5;
+  font-family: var(--font-primary);
 }
 * {
   outline: none;
@@ -101,7 +102,7 @@ button {
   color: #faedcd;
 }
 
-nav {
+header {
   position: fixed;
   top: 0;
   left: 88px;
@@ -109,16 +110,11 @@ nav {
   background-color: #fff;
 }
 
-.navigation {
+.container {
   display: flex;
   gap: 583px;
   justify-content: space-between;
   padding: 23px 0;
-}
-.navigation .name {
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
 .fullName {
@@ -148,7 +144,7 @@ nav {
 
 .home_info h3 {
   font-family: var(--font-primary);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-bold);
   font-size: 26px;
   margin: 0;
   padding: 0;
@@ -181,8 +177,11 @@ nav {
   flex-direction: column;
   align-items: center;
   width: 25px;
-  margin: 470px 0 0;
+  /* height: 100vh; */
+  /* margin: 470px 0 0; */
   position: fixed;
+  justify-content: flex-end;
+  bottom: 0;
 }
 .socials {
   display: flex;
@@ -198,11 +197,10 @@ nav {
 
 .back_top {
   display: flex;
-  align-items: end;
+  justify-content: end;
 }
 
 .foot_text {
-  font-family: var(--font-primary);
   font-size: var(--fw-regular);
   font-weight: var(--fs-sm);
 }
@@ -328,5 +326,5 @@ nav {
 }
 
 footer {
-  margin: 93px 0 20px;
+  padding: 93px 0 0;
 }
