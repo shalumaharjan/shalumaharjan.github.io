@@ -16,46 +16,74 @@
   --fw-bold: 700;
   --fw-extrabold: 800;
 }
-
-#wrapper {
-  margin: 0 88px;
-  padding: 0;
-  line-height: 1.5;
+body {
+  background-color: #faedcd;
   font-family: var(--font-primary);
+  font-size: 16px;
+  color: #3a2e2a;
+  margin: 0;
+}
+#wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+html {
+  box-sizing: border-box;
 }
 * {
-  outline: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  list-style: none;
-  background-color: #faedcd;
-  color: #3a2e2a;
+  box-sizing: inherit;
 }
-::before,
-::after {
-  box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
-
 a {
   color: inherit;
 }
 a:hover {
   color: #b08968;
 }
-
 ul {
   margin: 0;
 }
-
-.content {
-  padding: 270px 203px 0;
+.header-frame {
+  background: #faedcd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  z-index: 10;
+}
+.container {
+  max-width: 1214px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
 }
 
-footer {
+.mini-container {
+  max-width: 984px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.main-frame {
+  padding: 75px 0 0;
+}
+/* .content {
+  padding: 270px 203px 0;
+} */
+
+/* footer {
   display: flex;
   justify-content: center;
   justify-items: center;
-}
+} */
 
 h1 {
   font-family: var(--font-primary);
@@ -99,21 +127,6 @@ button {
 .btn:hover {
   background-color: #3a2e2a;
   color: #faedcd;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 88px;
-  right: 88px;
-  background-color: #fff;
-}
-
-.container {
-  display: flex;
-  gap: 583px;
-  justify-content: space-between;
-  padding: 23px 0;
 }
 
 .fullName {
@@ -171,27 +184,28 @@ header {
   border-radius: 5px;
 }
 
-.side_socials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 25px;
-  /* height: 100vh; */
-  /* margin: 470px 0 0; */
+.social-connect {
+  list-style: none;
+  padding: 0 0 160px;
+  margin: 0;
   position: fixed;
-  justify-content: flex-end;
   bottom: 0;
+  left: 150px;
+  z-index: 9;
 }
-.socials {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.social-connect::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 140px;
+  width: 2px;
+  background: #333;
+  z-index: -1;
+  left: 17px;
 }
 
-.line {
-  border-left: 2px solid #333;
-  height: 120px;
-  margin: 10px 15px 0;
+.footer-frame {
+  text-align: center;
 }
 
 .back_top {
