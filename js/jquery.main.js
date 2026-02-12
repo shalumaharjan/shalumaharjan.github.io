@@ -45,7 +45,7 @@ function initSmoothScroll() {
           $(this).parent("li").addClass("active");
           $("html, body").animate(
             {
-              scrollTop: target.offset().top - 20,
+              scrollTop: target.offset().top - 100,
             },
             1000,
             function () {
