@@ -45,11 +45,10 @@ a:hover {
 
 ul {
   margin: 0;
-  padding: 0;
 }
 
 .content {
-  margin: 319px 203px 0;
+  padding: 270px 203px 0;
 }
 
 footer {
@@ -165,7 +164,7 @@ header {
   gap: 80px;
 }
 .home_desc p {
-  width: 60%;
+  width: 70%;
 }
 
 .pp img {
@@ -229,6 +228,19 @@ header {
   width: 60%;
 }
 
+.skills {
+  display: grid; /* make main list a grid */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skills-section h2 {
+  padding: 0 0 25px;
+}
+.skills li::before {
+  content: "\2B27   ";
+}
+
 .projects {
   margin: 0 0 111px;
   display: flex;
@@ -248,20 +260,30 @@ header {
   border-radius: 5px;
   width: 50%;
   background-color: #fff;
+  box-shadow: 0 4px 8px rgba(85, 36, 0, 0.3);
 }
 .projects .pro_part {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
 }
 .projects .left {
   display: flex;
   align-items: center;
   gap: 20px;
+  background-color: #fff;
 }
 .project_details .used {
   display: flex;
   gap: 18px;
+  background-color: #fff;
+}
+.project_details p,
+.project_details h2,
+.project_details a,
+.project_details img {
+  background-color: #fff;
 }
 
 .contact {
