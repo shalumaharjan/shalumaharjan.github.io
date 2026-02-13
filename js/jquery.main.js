@@ -15,6 +15,7 @@ function initMenuOpener() {
     jQuery("body").toggleClass("navActive");
   });
 }
+
 function initSmoothScroll() {
   $('a[href*="#pgroll"]')
     // Remove links that don't actually link to anything
