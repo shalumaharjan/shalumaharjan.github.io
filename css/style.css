@@ -305,7 +305,7 @@ button {
   gap: 15px;
   margin: 12px 0 0;
 }
-#contact_form input[type="text"] {
+#contact_form input[type] {
   width: 490px;
   height: 40px;
   padding: 12px 12px 12px 20px;
