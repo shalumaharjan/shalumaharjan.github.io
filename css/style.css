@@ -359,6 +359,7 @@ button {
 .foot_text {
   font-size: var(--fw-regular);
   font-weight: var(--fs-sm);
+  padding: 0 0 40px;
 }
 
 footer {
@@ -366,6 +367,11 @@ footer {
 }
 
 .back_top {
-  display: flex;
-  justify-content: end;
+  /* display: flex;
+  justify-content: end; */
+  display: none;
+  position: fixed;
+  bottom: 28px;
+  right: 100px;
+  z-index: 9;
 }
