@@ -6,24 +6,24 @@ This project was developed as part of the **Bachelor of Computer Application (BC
 
 ----------
 
-## 📌 Project Details
+📌 **Project Details**
 - **Subject:** Web Technologies - I 
 - **Project Type:** Internal / Mini Project  
 - **Semester:** III Semester  
 
-## 🛠️ Technologies Used
+🛠️ **Technologies Used**
 - HTML5  
 - CSS3  
 - JavaScript
 
 ----------
 
-## 🌐 Live Website
+🌐 **Live Website**
 🔗 https://shalumaharjan.github.io/ 
 
 ----------
 
-## 📂 Project Structure
+📂 **Project Structure**
 
 Portfolio/
 │
