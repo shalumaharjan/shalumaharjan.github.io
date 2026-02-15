@@ -205,10 +205,6 @@ button {
   left: 17px;
 }
 
-.footer-frame {
-  text-align: center;
-}
-
 .hero {
   display: flex;
   flex-direction: column;
@@ -220,7 +216,8 @@ button {
 .about {
   margin: 0 0 75px;
   display: flex;
-  gap: 94px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .about_text {
   display: flex;
@@ -253,7 +250,8 @@ button {
 }
 .projects .works {
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .projects .project_details {
   padding: 40px 47px;
@@ -262,7 +260,7 @@ button {
   gap: 28px;
   border: 1px solid #3a2e2a;
   border-radius: 5px;
-  width: 50%;
+  max-width: 47%;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(85, 36, 0, 0.3);
 }
@@ -355,6 +353,10 @@ button {
   flex-direction: column;
   gap: 40px;
 }
+.other_contact {
+  display: flex;
+  gap: 15px;
+}
 
 .foot_text {
   font-size: var(--fw-regular);
@@ -364,14 +366,168 @@ button {
 
 footer {
   padding: 93px 0 0;
+  text-align: center;
 }
 
 .back_top {
-  /* display: flex;
-  justify-content: end; */
   display: none;
   position: fixed;
   bottom: 28px;
   right: 100px;
   z-index: 9;
+}
+
+@media (max-width: 1601px) {
+  /* Styles for large desktop screens */
+  .mini-container {
+    width: 80%;
+  }
+
+  .hero {
+    padding-top: 180px;
+  }
+
+  .social-connect {
+    left: 30px;
+  }
+
+  .back_top {
+    right: 20px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Styles for small laptops */
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Styles for tablets */
+  .mini-container {
+    width: 70%;
+  }
+
+  .nav_head,
+  button {
+    font-size: var(--fs-xs);
+  }
+
+  .pp img {
+    max-height: 220px;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .about_text {
+    width: 100%;
+  }
+
+  #contact_form input[type] {
+    max-width: 400px;
+  }
+
+  .projects .works {
+    gap: 20px;
+  }
+  .projects .project_details {
+    max-width: 100%;
+  }
+
+  .social-connect {
+    left: 45px;
+  }
+
+  .back_top {
+    right: 30px;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* Make form full width */
+  #contact_form input[type],
+  #contact_form textarea {
+    width: 100%;
+  }
+
+  /* Button full width (optional, looks better on mobile) */
+  #contact_form .btn {
+    align-self: stretch;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Styles for small mobile devices */
+  .hero {
+    padding-top: 157px;
+  }
+  .home_desc p {
+    width: 100%;
+  }
+  .nav_head {
+    gap: 0;
+    padding: 0;
+  }
+  .nav_head li a {
+    display: none;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .about_text {
+    width: 100%;
+  }
+
+  .projects .works {
+    gap: 20px;
+  }
+  .projects .project_details {
+    max-width: 100%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .social-connect {
+    padding: 0;
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  .social-connect::before {
+    position: inherit;
+    width: 0;
+    height: 0;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* Make form full width */
+  #contact_form input[type],
+  #contact_form textarea {
+    width: 100%;
+  }
+
+  /* Button full width (optional, looks better on mobile) */
+  #contact_form .btn {
+    align-self: stretch;
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  /* Styles for small mobile devices */
 }
