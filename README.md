@@ -26,7 +26,6 @@ This project was developed as part of the **Bachelor of Computer Application (BC
 📂 **Project Structure**
 
 Portfolio/
-│
 ├── index.html
 ├── css/
 │   └── style.css
@@ -36,4 +35,4 @@ Portfolio/
 │   ├── jquery.main.js
 │   └── jquery-3.6.0.min.js
 └── images/
-    └── (other image files)
+    └── other-image-files
